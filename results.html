@@ -1,0 +1,111 @@
+<html>
+
+	<head>
+		<meta charset="utf8"/>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300|Roboto" rel="stylesheet"> 
+		<link href='https://fonts.googleapis.com/css?family=Ek+Mukta:300' rel='stylesheet' type='text/css'>
+		<script type="text/javascript">
+        const params = new URLSearchParams(document.location.search);
+        var sid = params.get("study_id");
+        console.log("got study id from url "+sid);
+
+        document.getElementById("userid").value = ""; // Clear the value of the user id input field
+
+        function fetchData() {
+            var xmlhttp;
+
+            if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp = new XMLHttpRequest();
+            }
+            else {// code for IE6, IE5
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+             sid = document.getElementById("studyid").value;
+            var uid = document.getElementById("userid").value;
+            document.getElementById("container").innerHTML = "";
+            var getData = "results.php?sid=" + sid + "&uid=" + uid;
+            console.log("url:" + getData);
+            xmlhttp.open("GET", getData, true);
+            xmlhttp.send();
+
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    var responseText = this.responseText;
+                    document.getElementById("container").innerHTML = responseText;
+                }
+            };
+        }
+
+				
+	
+		</script>
+
+		<style>
+		body{
+			background: white;
+			font-family: 'Open sans',sans-serif;
+		}
+		div{
+			width:100%; 
+			background:white;
+			margin:auto;
+			padding:30px;
+			color: teal;
+			/*margin-top:50px;*/
+		}
+		
+		button{
+			padding:0.5em;
+			margin-left: 30px;
+			background: steelblue;
+			color: ivory;
+			font-size: 1em;
+			border: none;
+			border-radius: 4px;
+			z-index:1000;
+			
+		}
+		input{
+			margin:auto;
+			padding:30px;
+			border-collapse: collapse;
+			padding:5px;
+			font-size: 1em;
+		}
+		label{
+			margin:auto;
+			padding:30px;
+			font-size: 1em;
+			color:black;
+		}
+		
+		span{
+			color: teal;
+			font-size: 1.2em;
+		}
+
+		table{
+			background-color: #cbcbcb;
+		}
+		td,th{
+			border-collapse: true;			
+			padding:0.5em;
+			background-color: #fff;
+			color:black;
+			font-family: 'Ek mukta';
+		}
+		
+		</style>
+
+	</head>
+
+	<body onload="fetchData()">
+		<div>
+		    <label for="sid">Enter Study id </label><input id ="studyid" type="text"></input>
+            <label for="uid">Enter User id </label><input id ="userid" type="text"></input>
+			<br/><button type="button" onclick="fetchData()" id="variable2">Show data</button>
+
+			<div id="container"></div>
+		</div>
+	</body>
+</html>

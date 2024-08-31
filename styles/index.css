@@ -1,0 +1,122 @@
+/* Global Styles */
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.rounded-iframe {
+    border-radius: 20px; 
+    overflow: hidden; 
+}
+
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+input[type="file"] {
+    margin-bottom: 20px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color:  steelblue;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+.csv-icon {
+    width: 30px;
+    height: auto;
+    margin-right: 5px;
+}
+
+
+.download-link {
+    text-decoration: none;
+    color:  steelblue;
+}
+
+.download-link:hover {
+    text-decoration: underline;
+}
+
+
+#error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+
+@media screen and (min-width: 768px) {
+    textarea {
+        width: 100%;
+        max-width: 400px; 
+    }
+}
+
+/* Adjustments for mobile */
+@media screen and (max-width: 767px) {
+    textarea {
+        width: 100%;
+        max-width: 300px; 
+    }
+}
+/* Adjustments for PC */
+@media screen and (min-width: 768px) {
+    input[type="text"],
+    input[type="number"] {
+        width: 100%;
+        max-width: 300px; 
+    }
+}
+
+/* Adjustments for mobile */
+@media screen and (max-width: 767px) {
+    input[type="text"],
+    input[type="number"] {
+        width: 100%;
+        max-width: 200px; 
+    }
+}

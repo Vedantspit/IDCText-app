@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Micro+5+Charted&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/modResult.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <script>
+        const params = new URLSearchParams(document.location.search);
+        const sid = params.get("study_id");
+
+        function downloadCSVDetail() {
+            window.location.href = 'detailed_summary.php?sid=' + sid;
+        }
+        
+        function downloadCSV(tableId, fileName) {
+            var table = document.querySelector('#' + tableId + ' table');
+            if (!table) {
+                alert('Data is still loading, please wait.');
+                return;
+            }
+
+            var worksheet = XLSX.utils.table_to_sheet(table);
+            var workbook = XLSX.utils.book_new();
+            XLSX.utils.book_append_sheet(workbook, worksheet, 'Sheet1');
+            XLSX.writeFile(workbook, fileName);
+        }
+
+        function fetchData() {
+            fetchOverallData();
+            fetchSessionSummaryData();
+        }
+
+        function fetchOverallData() {
+            var xmlhttp = new XMLHttpRequest();
+
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    var responseText = this.responseText;
+                    document.getElementById("overall").innerHTML = responseText;
+                    enableButtons();
+                } else if (this.readyState == 4 && this.status != 200) {
+                    document.getElementById("container2").innerHTML = '<span class="spanWhite">Server went away. Data not saved. Error code:' + this.status + '.</span><br/><button style="background:orange;" type="button" onclick="fetchOverallData()">Try again</button>';
+                }
+            };
+
+            var url = "overall.php";
+            var params = "studyid=" + sid;
+            ////console.log("PARAMETERS SENDING TO overall.php IS " + params);
+            xmlhttp.open("POST", url, true);
+            xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+            xmlhttp.send(params);
+        }
+
+        function fetchSessionSummaryData() {
+            var xmlhttp = new XMLHttpRequest();
+
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    var responseText = this.responseText;
+                    document.getElementById("session_summary").innerHTML = responseText;
+                    enableButtons();
+                } else if (this.readyState == 4 && this.status != 200) {
+                    document.getElementById("container2").innerHTML = '<span class="spanWhite">Server went away. Data not saved. Error code:' + this.status + '.</span><br/><button style="background:orange;" type="button" onclick="fetchSessionSummaryData()">Try again</button>';
+                }
+            };
+
+            var url = "session_wise_summary.php";
+            var params = "studyid=" + sid;
+            //console.log("PARAMETERS SENDING TO session_wise_summary.php IS " + params);
+            xmlhttp.open("POST", url, true);
+            xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+            xmlhttp.send(params);
+        }
+
+        function enableButtons() {
+            document.querySelectorAll('.buttonTables button').forEach(button => {
+                button.disabled = false;
+            });
+        }
+
+        window.onload = function() {
+            fetchData();
+    
+            document.querySelectorAll('.buttonTables button').forEach(button => {
+                button.disabled = true;
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Results</h1>
+    <div class="buttonTables">
+        <button type="button" onclick="downloadCSV('overall', 'overall_summary.csv')">Download CSV for Overall Summary</button>
+        <button type="button" onclick="downloadCSV('session_summary', 'session_summary.csv')">Download CSV for session Wise Summary</button>
+        <button type="button" onclick="downloadCSVDetail()">Download CSV for Detailed Results</button>
+    </div>
+    <div id="container2"></div>
+    <div id="overall"></div>
+    <div id="session_summary"></div>
+</body>
+</html>
