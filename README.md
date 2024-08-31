@@ -10,6 +10,7 @@ A = Apache Server
 M = MariaDB
 P = PHP
 P = Perl
+
 On completing the download of the setup file, begin the installation process and, in the “Select Components” section, select all the required components.
 
 ![image](https://github.com/user-attachments/assets/87332a04-5ae4-41b4-8cd8-62186ae80484)
