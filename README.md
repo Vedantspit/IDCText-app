@@ -33,7 +33,7 @@ git clone https://github.com/IDCText/IDCText-app.git
 
 ### 2. Download the Source Code
 
-- If you don not want to clone from github , you can download the source code as a ZIP file.
+- If you do not want to clone from github , you can download the source code as a ZIP file.
 - Extract the ZIP file to your desired location.
 
 ### 3. Directory Structure
