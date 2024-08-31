@@ -28,7 +28,7 @@ First, download the source code or clone the repository using Git.
 
 **To clone the repository:**
 ```bash
-https://github.com/IDCText/IDCText-app.git
+git clone https://github.com/IDCText/IDCText-app.git
 ```
 
 ### 2. Download the Source Code
