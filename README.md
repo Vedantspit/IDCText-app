@@ -60,4 +60,4 @@ Before you run or start writing any program in PHP, you should start Apache and 
     - Repeat the process by importing the **'studies.sql'** file into the same textABC database.
 
 
-**Open your web browser and navigate to http://localhost/IDCText**.
+**Open your web browser and navigate to http://localhost/IDCText-app**.
