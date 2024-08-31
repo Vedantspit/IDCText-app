@@ -53,7 +53,7 @@ Before you run or start writing any program in PHP, you should start Apache and 
 
 1. Open phpMyAdmin by navigating to `http://localhost/phpmyadmin` in your web browser.
      - Create a new database named **'textidc'** .
-     - ![image](https://github.com/user-attachments/assets/61294ceb-846d-45b4-8c95-a3adf12548d8)
+  ![image](https://github.com/user-attachments/assets/61294ceb-846d-45b4-8c95-a3adf12548d8)
 
     - Import the SQL files provided in the databases folder into the textidc database:
       Click on the textidc database, go to the Import tab, and select the **'nusers.sql'** file from the databases folder. Click on 'import' to import the table in databaser.
