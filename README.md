@@ -34,7 +34,7 @@ git clone https://github.com/IDCText/IDCText-app.git
 ### 2. Download the Source Code
 
 - If you do not want to clone from github , you can download the source code as a ZIP file.
-- Extract the ZIP file to your desired location.
+- Extract the ZIP file to your desired location (as explained below) .
 
 ### 3. Directory Structure
 ![image](https://github.com/user-attachments/assets/2f778b1f-cdc2-40d0-9832-3ce68e71ceea)
@@ -42,7 +42,7 @@ git clone https://github.com/IDCText/IDCText-app.git
   In the XAMPP directory, there exists a folder called “htdocs”. This is where all the programs for the web pages will be stored.
    Now, to run a PHP script:
    
-   Go to “C:\xampp\htdocs” and inside it, and move the source code downloaded here.
+   Go to “C:\xampp\htdocs” and inside it, either clone the repository here or move the downloaded source code here.
 
 ### Setup Instructions
 
