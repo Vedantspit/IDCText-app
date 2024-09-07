@@ -83,6 +83,7 @@ echo "</script>";
 </head>
 <body onload="fetchData()">
 <div id="container" class="container">
+  <h2>Add Participants</h2>
   <h4>Enter USER ID</h4>
   <form action="" method="post" onsubmit="return getInfo()">
     <input type="text" id="userID" name="userID" required autofocus>

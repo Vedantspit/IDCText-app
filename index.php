@@ -190,22 +190,24 @@ if (isset($_POST["submit"])) {
 </head>
 <body>
 <div class="container">
-    <h1>Study Creation</h1>
+    <h1>IDCText : Application to Conduct Text Input Research Studies in Indian Languages </h1>
+    <h2>Study Creation</h2>
+    
 
     <div class="video-container">
         <h2>How to create a study</h2>
         <div class="rounded-iframe">
-            <iframe width="100%" height="300" src="https://www.youtube.com/embed/lFYzz8xbZsM" frameborder="0" allowfullscreen></iframe>
+            <iframe width="100%" height="300" src="https://www.youtube.com/embed/zjOIJ0RGGFE" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
     
     <form id="sessionForm" method="post" enctype="multipart/form-data">
-        <label>Enter STUDY ID:</label>
-        <input id="studyid" name="studyid" type="text" required autofocus ><br><br>
+        <label><h4>Enter STUDY ID:</h4></label>
+        <input id="studyid" name="studyid" type="text" required autofocus ><br>
         
-        <label for="sessno">Number of Sessions:</label>
-        <input type="number" id="sessno" name="sessno" required min="1" onchange="calculateMinPhraseCount()"><br><br>
-        <label for="phrasesPerSession">Number of Phrases per Session:</label>
+        <label for="sessno"><h4>Number of Sessions:</h4></label>
+        <input type="number" id="sessno" name="sessno" required min="1" onchange="calculateMinPhraseCount()"><br>
+        <label for="phrasesPerSession"><h4>Number of Phrases per Session:</h4></label>
         <input type="number" id="phrasesPerSession" name="phrasesPerSession" min="1" onchange="calculateMinPhraseCount()"><br>
         
         <h4>Randomization of Phrases</h4>
@@ -254,8 +256,8 @@ if (isset($_POST["submit"])) {
       
         
         <label><h4>Enter number of keyboards</h4></label>
-        <input name="nokeyboards" type="text"><br><br>
-        
+        <input name="nokeyboards" type="text"><br>
+        <label><h4>Enter names of the keyboards</h4></label>
         <textarea rows="5" cols="30" name="keyboards" placeholder="Enter name of keyboards separated by commas"></textarea><br><br>
         
         <button type="submit" name="submit">Submit</button>

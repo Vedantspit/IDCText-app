@@ -22,10 +22,30 @@ body {
 
 
 h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5em;
+    color: #2c3e50;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    background: linear-gradient(to right, #7b08e6, #033a4e);
+    background-clip: text; /* Standard */
+    -webkit-background-clip: text; /* For WebKit browsers like Chrome, Safari */
+    -moz-background-clip: text; /* For Firefox (older versions) */
+    color: transparent;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+
+
+h3,h2 {
     text-align: center;
     color: #333;
 }
-
 
 form {
     margin-top: 20px;
