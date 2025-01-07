@@ -1,6 +1,6 @@
 # Project Setup Guide
 
-Visit **http://idid.in/IDCtext/ **  to see the hosted version of IDCText application
+Visit [**IDCText**](http://idid.in/IDCtext/)  to see the hosted version of IDCText application
 
 ## Prerequisites
 Before you begin, ensure you have the following installed on your local machine:
