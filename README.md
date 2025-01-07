@@ -1,6 +1,9 @@
 # IDCText: An Application for Conducting Text Input Research Studies in Indian Languages
 
 
+IDCText is an open-source, freely available web application developed using HTML5, CSS3, PHP and Javascript. IDCText allows HCI researchers to design
+studies in Indian languages, offering the flexibility to use custom phrases and
+configure various study parameters to meet their specific needs.
 Visit [**IDCText**](http://idid.in/IDCtext/)  to see the hosted version of IDCText application
 
 
