@@ -1,6 +1,6 @@
 # MIT License
 
-Copyright (c) 2024 | IDCText
+Copyright (c) 2024 | IDCText: An Application for Conducting Text Input Research Studies in Indian Languages
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
