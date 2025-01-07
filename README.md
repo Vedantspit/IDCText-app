@@ -1,7 +1,10 @@
-# Project Setup Guide
+# IDCText: An Application for Conducting Text Input Research Studies in Indian Languages
+
 
 Visit [**IDCText**](http://idid.in/IDCtext/)  to see the hosted version of IDCText application
 
+
+# Project Setup Guide 
 ## Prerequisites
 Before you begin, ensure you have the following installed on your local machine:
 - [**XAMPP**](https://www.apachefriends.org/index.html) (or any other local server like WAMP, MAMP, etc.)
