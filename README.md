@@ -66,3 +66,11 @@ Before you run or start writing any program in PHP, you should start Apache and 
 
 
 **Open your web browser and navigate to http://localhost/IDCText-app**.
+
+
+
+
+## Tutorial Video 
+
+Tutorial video for creating a text input study on IDCText is available on [Youtube](https://www.youtube.com/watch?v=zjOIJ0RGGFE).
+
