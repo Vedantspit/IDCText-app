@@ -76,7 +76,7 @@ Before you run or start writing any program in PHP, you should start Apache and 
 **Open your web browser and navigate to http://localhost/IDCText-app**.
 
 
-
+--------------------------------------------------------------------------------------------------------------------------------
 
 ## Tutorial Video 
 
