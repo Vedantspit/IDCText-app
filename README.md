@@ -53,7 +53,7 @@ git clone https://github.com/IDCText/IDCText-app.git
 ### 3. Directory Structure
 
 
-<img src="https://github.com/user-attachments/assets/2f778b1f-cdc2-40d0-9832-3ce68e71ceea" alt="Installation step 1" width="600" height="400">
+<img src="https://github.com/user-attachments/assets/2f778b1f-cdc2-40d0-9832-3ce68e71ceea" alt="Installation step 1" width="600" height="200">
 
 
   In the XAMPP directory, there exists a folder called “htdocs”. This is where all the programs for the web pages will be stored.
