@@ -1,4 +1,3 @@
-<img src="https://github.com/favicon.ico" width="48">
 # IDCText: An Application for Conducting Text Input Research Studies in Indian Languages
 
 ### Abstract 
@@ -28,7 +27,7 @@ P = Perl
 On completing the download of the setup file, begin the installation process and, in the “Select Components” section, select all the required components.
 
 ![image](https://github.com/user-attachments/assets/87332a04-5ae4-41b4-8cd8-62186ae80484)
-
+<img src="https://github.com/user-attachments/assets/87332a04-5ae4-41b4-8cd8-62186ae80484" alt="Installation step 1" width="600" height="400">
 Next, select the directory where you want the software to be installed. It is recommended that you keep the default directory “C:\xampp” and click on “next” to complete the installation
 
 ![image](https://github.com/user-attachments/assets/65e66106-5c0b-40d5-816d-aace1fd0e099)
