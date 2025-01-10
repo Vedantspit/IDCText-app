@@ -78,9 +78,9 @@ Before you run or start writing any program in PHP, you should start Apache and 
 <img src="https://github.com/user-attachments/assets/61294ceb-846d-45b4-8c95-a3adf12548d8" alt="Installation step 1" width="600" height="400">
 
 
-    - Import the SQL files provided in the databases folder into the textidc database:
+   - Import the SQL files provided in the databases folder into the textidc database:
       Click on the textidc database, go to the Import tab, and select the **'nusers.sql'** file from the databases folder. Click on 'import' to import the table in databaser.
-    - Repeat the process by importing the **'studies.sql'** file into the same textidc database.
+   - Repeat the process by importing the **'studies.sql'** file into the same textidc database.
 
 
 **Open your web browser and navigate to http://localhost/IDCText-app**.
