@@ -1,3 +1,4 @@
+<img src="https://github.com/favicon.ico" width="48">
 # IDCText: An Application for Conducting Text Input Research Studies in Indian Languages
 
 ### Abstract 
