@@ -71,7 +71,7 @@ git clone https://github.com/IDCText/IDCText-app.git
 
 Before you run or start writing any program in PHP, you should start Apache and MYSQL in xampp as shown above.
 
-1. Open phpMyAdmin by navigating to `http://localhost/phpmyadmin` in your web browser.
+- Open phpMyAdmin by navigating to `http://localhost/phpmyadmin` in your web browser.
      - Create a new database named **'textidc'** .
 
 
