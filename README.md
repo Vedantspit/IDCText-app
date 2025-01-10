@@ -26,13 +26,12 @@ P = Perl
 
 On completing the download of the setup file, begin the installation process and, in the “Select Components” section, select all the required components.
 
-![image](https://github.com/user-attachments/assets/87332a04-5ae4-41b4-8cd8-62186ae80484)
+
 <img src="https://github.com/user-attachments/assets/87332a04-5ae4-41b4-8cd8-62186ae80484" alt="Installation step 1" width="600" height="400">
 
 
 Next, select the directory where you want the software to be installed. It is recommended that you keep the default directory “C:\xampp” and click on “next” to complete the installation
 
-![image](https://github.com/user-attachments/assets/65e66106-5c0b-40d5-816d-aace1fd0e099)
 <img src="https://github.com/user-attachments/assets/65e66106-5c0b-40d5-816d-aace1fd0e099" alt="Installation step 1" width="600" height="400">
 
 
@@ -52,7 +51,8 @@ git clone https://github.com/IDCText/IDCText-app.git
 - Extract the ZIP file to your desired location (as explained below) .
 
 ### 3. Directory Structure
-![image](https://github.com/user-attachments/assets/2f778b1f-cdc2-40d0-9832-3ce68e71ceea)
+
+
 <img src="https://github.com/user-attachments/assets/2f778b1f-cdc2-40d0-9832-3ce68e71ceea" alt="Installation step 1" width="600" height="400">
 
 
@@ -64,7 +64,8 @@ git clone https://github.com/IDCText/IDCText-app.git
 ### Setup Instructions
 
 ### 4. Set Up the Database
-![image](https://github.com/user-attachments/assets/f4b66c0f-c490-4867-bfe9-bc95acbd32d7)
+
+
 <img src="https://github.com/user-attachments/assets/f4b66c0f-c490-4867-bfe9-bc95acbd32d7" alt="Installation step 1" width="600" height="400">
 
 
@@ -72,7 +73,8 @@ Before you run or start writing any program in PHP, you should start Apache and 
 
 1. Open phpMyAdmin by navigating to `http://localhost/phpmyadmin` in your web browser.
      - Create a new database named **'textidc'** .
-  ![image](https://github.com/user-attachments/assets/61294ceb-846d-45b4-8c95-a3adf12548d8)
+
+
 <img src="https://github.com/user-attachments/assets/61294ceb-846d-45b4-8c95-a3adf12548d8" alt="Installation step 1" width="600" height="400">
 
 
